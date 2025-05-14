@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // Use latest ECMAScript for better features
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true, // Enable strict mode for better type safety
+    "noEmit": true,
+    "incremental": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve", // Recommended for Next.js (instead of "preserve")
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "strictNullChecks": true,
+    "baseUrl": ".", // Helps with import aliasing
+    "paths": {
+      "@/*": ["./frontend/src"]
+     // Ensure alias resolution for "@/context/CartContext"
+    }
+    // Ensure aliasing works correctly
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
