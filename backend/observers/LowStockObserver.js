@@ -4,5 +4,5 @@ class LowStockObserver {
     // In a real application, you would send an email or trigger a more sophisticated alert here.
   }
 }
-
+//ntc
 module.exports = LowStockObserver;

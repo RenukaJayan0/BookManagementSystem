@@ -8,7 +8,7 @@ router.get('/financial-reports', auth, async (req, res) => {
     try {
         // Assuming user information (including role) is available in req.user after auth middleware
         const user = req.user;
-
+//ntc
         const financialReportProxy = new FinancialReportProxy(user);
         const reports = financialReportProxy.getFinancialReports();
 

@@ -1,5 +1,5 @@
 const User = require('./User');
-
+//ntc
 class Admin extends User {
   constructor(email, password) {
     super(email, password);

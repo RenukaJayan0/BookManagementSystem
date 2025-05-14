@@ -15,6 +15,6 @@ class FinancialReportProxy {
       throw new Error('Unauthorized access to financial reports.');
     }
   }
-}
+}//
 
 module.exports = FinancialReportProxy;

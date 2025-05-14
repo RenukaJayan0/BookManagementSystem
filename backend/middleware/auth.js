@@ -1,5 +1,5 @@
 // backend/middleware/auth.js
-
+//ntc
 const jwt = require('jsonwebtoken');
 
 const authenticateJWT = (req, res, next) => {

@@ -1,5 +1,5 @@
 // backend/middleware/authValidation.js
-
+//ntc
 const validateLoginInput = (req, res, next) => {
   const { email, password } = req.body;
 

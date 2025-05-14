@@ -7,7 +7,7 @@ const auth = require('../middleware/auth'); // Assuming you have an auth middlew
 router.post('/books', auth, async (req, res) => {
     // In a real application, you would also validate the input data
     const { title, author, isbn, price, quantity, description, imageUrl } = req.body;
-
+//ntc
     try {
         // Basic validation (you should add more comprehensive validation)
         if (!title || !author || !isbn || !price || !quantity) {

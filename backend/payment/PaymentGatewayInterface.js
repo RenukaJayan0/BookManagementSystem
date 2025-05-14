@@ -9,5 +9,5 @@ class PaymentGatewayInterface {
   // مثلاً: refundPayment(transactionId, amount)
   // مثلاً: checkPaymentStatus(transactionId)
 }
-
+//ntc
 module.exports = PaymentGatewayInterface;

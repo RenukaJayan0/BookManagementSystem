@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const LowStockObserver = require('../observers/LowStockObserver'); // Import the LowStockObserver
-
+//s
 const bookSchema = new mongoose.Schema({
   title: {
     type: String,
