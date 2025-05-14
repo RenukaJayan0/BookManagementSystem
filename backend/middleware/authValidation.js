@@ -24,7 +24,7 @@ const validateEmailFormat = (req, res, next) => {
 const validateGmailDomain = (req, res, next) => {
   const { email } = req.body;
 
-  if (!email.endsWith('@gmail.com')) {
+  if (!email || !email.endsWith('@gmail.com')) {
     return res.status(400).json({ message: 'Email must end with @gmail.com' });
   }
 

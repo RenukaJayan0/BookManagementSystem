@@ -13,6 +13,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  role: {
+    type: String,
+    enum: ['Admin', 'Member'],
+  },
   cart: [
     {
       bookId: {
@@ -41,5 +45,22 @@ userSchema.pre('save', async function (next) {
 });
 
 const User = mongoose.model('User', userSchema);
+
+class Admin extends User {
+  // Admin specific methods/properties can go here
+}
+
+class Member extends User {
+  // Member specific methods/properties can go here
+}
+
+// Factory function to create user instances based on role
+User.createUser = (userData) => {
+  if (userData.role === 'Admin') {
+    return new Admin(userData);
+  } else {
+    return new Member(userData);
+  }
+};
 
 module.exports = User;
